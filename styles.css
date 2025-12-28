@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --obalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  /*    (background)     */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /*     (circle)     */
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: "HanKen Grotesk";
+  src:
+    url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+      format("truetype-variations"),
+    url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 800;
+  font-style: normal;
+}
+/* 500 700 800 */
+
+body {
+  font-size: 18px;
+  font-family: "HanKen Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+#result-section {
+  height: 45vh;
+  background: linear-gradient(
+    0deg,
+    rgba(62, 43, 233, 1) 18%,
+    rgba(101, 87, 255, 1) 100%
+  );
+  color: var(--white);
+  text-align: center;
+  border-radius: 0 0 1.7rem 1.7rem;
+}
+
+#result-section h2 {
+  padding-top: 1rem;
+  color: hsl(0, 0%, 70%);
+}
+
+#result-circle {
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result-circle p {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 70%);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+#result {
+  font-weight: 700;
+  font-size: 3rem;
+  display: block;
+  color: hsl(0, 0%, 100%);
+}
+
+.description {
+  margin: 0 auto;
+  width: 60%;
+  font-weight: 700;
+}
+
+#desc-title {
+}
+
+#desc-text {
+  color: hsl(0, 0%, 70%);
+  font-size: 0.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: none;
+    background-color: black;
+  }
+}
