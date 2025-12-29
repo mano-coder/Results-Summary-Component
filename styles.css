@@ -48,7 +48,7 @@ h2 {
 }
 
 #result-section {
-  height: 45vh;
+  height: 47vh;
   background: linear-gradient(
     0deg,
     rgba(62, 43, 233, 1) 18%,
@@ -94,6 +94,7 @@ h2 {
   margin: 0 auto;
   width: 60%;
   font-weight: 700;
+  overflow-wrap: wrap;
 }
 
 #desc-title {
@@ -104,6 +105,8 @@ h2 {
 #desc-text {
   color: hsl(0, 0%, 70%);
   font-size: 1rem;
+  margin-bottom: 3rem;
+  height: auto;
 }
 
 /* Summary Section */
@@ -226,9 +229,76 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   body {
-    display: none;
-    background-color: black;
+    font-size: 15px;
   }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .flex {
+    display: flex;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    background-color: var(--white);
+    margin-top: 5rem;
+    box-shadow: 0px 0px 14px 6px rgba(6,0,183,0.08);
+    border-radius: 1.5rem;
+  }
+
+  #result-section {
+    height: 100%;
+    border-radius: 1.5rem;
+    width: 50%;
+  }
+
+  #result-circle {
+    height: 9rem;
+    width: 9rem;
+    margin: 1.3rem auto;
+  }
+
+  #result-circle p {
+    font-size: 0.8rem;
+  }
+
+  #result {
+    font-size: 3rem;
+  }
+
+  main {
+    margin: 0;
+    display: block;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 1rem;
+    width: 50%;
+  }
+
+  .category {
+    margin: 1rem auto;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
+
+  #continue-btn {
+    height: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  #desc-title {
+    margin: 1rem 0;
+  }
+
+  #desc-text {
+    font-size: 0.9rem;
+  }
+
 }
